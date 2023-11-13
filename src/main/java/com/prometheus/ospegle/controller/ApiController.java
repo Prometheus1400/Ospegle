@@ -23,7 +23,6 @@ public class ApiController {
     // user provides their own uuid to this method (generated from client side code)
     @GetMapping("/get-connection/{uuid}")
     public Mono<Room> getConnection(@PathVariable final String uuid) {
-        // TODO add logic for using PeerQueue
         return queue.getRoom(uuid);
     }
 }

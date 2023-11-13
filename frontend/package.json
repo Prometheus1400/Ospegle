@@ -18,10 +18,10 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build",
+    "build": "react-scripts build && mv build/ ../src/main/resources/static/",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "clean": "rm -r build/"
+    "clean": "rm -r ../src/main/resources/static"
   },
   "eslintConfig": {
     "extends": [

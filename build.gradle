@@ -5,15 +5,8 @@ plugins {
 }
 
 def appVersion = project.hasProperty('appVersion') ? project.appVersion : 'unspecified'
-//processResources {
-//	// Enable resource filtering
-//	filesMatching('**/application.properties') {
-//		expand(['appVersion': appVersion])
-//	}
-//}
-
 group = 'com.prometheus'
-version = appVersion + '-SNAPSHOT'
+version = "${appVersion}-SNAPSHOT"
 
 java {
 	sourceCompatibility = '17'
